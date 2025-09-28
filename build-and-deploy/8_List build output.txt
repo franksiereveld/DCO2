@@ -1,0 +1,23 @@
+﻿2025-09-28T21:10:26.2060262Z ##[group]Run echo "Build completed. Contents of dist directory:"
+2025-09-28T21:10:26.2060731Z [36;1mecho "Build completed. Contents of dist directory:"[0m
+2025-09-28T21:10:26.2061070Z [36;1mls -la dist/[0m
+2025-09-28T21:10:26.2061301Z [36;1mecho "Contents of dist/assets:"[0m
+2025-09-28T21:10:26.2061599Z [36;1mls -la dist/assets/ || echo "No assets directory"[0m
+2025-09-28T21:10:26.2094037Z shell: /usr/bin/bash -e {0}
+2025-09-28T21:10:26.2094263Z env:
+2025-09-28T21:10:26.2094494Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2025-09-28T21:10:26.2094781Z ##[endgroup]
+2025-09-28T21:10:26.2145470Z Build completed. Contents of dist directory:
+2025-09-28T21:10:26.2158945Z total 328
+2025-09-28T21:10:26.2159651Z drwxr-xr-x 3 runner runner   4096 Sep 28 21:10 .
+2025-09-28T21:10:26.2161089Z drwxr-xr-x 9 runner runner   4096 Sep 28 21:10 ..
+2025-09-28T21:10:26.2161730Z drwxr-xr-x 2 runner runner   4096 Sep 28 21:10 assets
+2025-09-28T21:10:26.2162386Z -rw-r--r-- 1 runner runner  15406 Sep 28 21:10 favicon.ico
+2025-09-28T21:10:26.2163256Z -rw-r--r-- 1 runner runner    694 Sep 28 21:10 index.html
+2025-09-28T21:10:26.2163969Z -rw-r--r-- 1 runner runner 302218 Sep 28 21:10 starry-night-bg.jpg
+2025-09-28T21:10:26.2164532Z Contents of dist/assets:
+2025-09-28T21:10:26.2173643Z total 456
+2025-09-28T21:10:26.2174319Z drwxr-xr-x 2 runner runner   4096 Sep 28 21:10 .
+2025-09-28T21:10:26.2174933Z drwxr-xr-x 3 runner runner   4096 Sep 28 21:10 ..
+2025-09-28T21:10:26.2175622Z -rw-r--r-- 1 runner runner  96928 Sep 28 21:10 index-C8iAIFxz.css
+2025-09-28T21:10:26.2176354Z -rw-r--r-- 1 runner runner 356546 Sep 28 21:10 index-rfGZ5N0L.js

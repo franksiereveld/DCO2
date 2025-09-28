@@ -1,0 +1,23 @@
+﻿2025-09-28T21:10:27.2807961Z ##[group]Run actions/deploy-pages@v4
+2025-09-28T21:10:27.2808381Z with:
+2025-09-28T21:10:27.2808795Z   token: ***
+2025-09-28T21:10:27.2809077Z   timeout: 600000
+2025-09-28T21:10:27.2809367Z   error_count: 10
+2025-09-28T21:10:27.2809662Z   reporting_interval: 5000
+2025-09-28T21:10:27.2810024Z   artifact_name: github-pages
+2025-09-28T21:10:27.2810384Z   preview: false
+2025-09-28T21:10:27.2810672Z env:
+2025-09-28T21:10:27.2811014Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2025-09-28T21:10:27.2811475Z   GITHUB_PAGES: true
+2025-09-28T21:10:27.2811783Z ##[endgroup]
+2025-09-28T21:10:27.6379510Z Fetching artifact metadata for "github-pages" in this workflow run
+2025-09-28T21:10:27.7140925Z Found 1 artifact(s)
+2025-09-28T21:10:27.7154238Z Creating Pages deployment with payload:
+2025-09-28T21:10:27.7154685Z {
+2025-09-28T21:10:27.9451464Z 	"artifact_id": 4126935734,
+2025-09-28T21:10:27.9452323Z 	"pages_build_version": "1c825f387a280a24d2910e95009f4b40fd474d07",
+2025-09-28T21:10:27.9485888Z 	"oidc_token": "***"
+2025-09-28T21:10:27.9486340Z }
+2025-09-28T21:10:27.9487154Z Created deployment for 1c825f387a280a24d2910e95009f4b40fd474d07, ID: 1c825f387a280a24d2910e95009f4b40fd474d07
+2025-09-28T21:10:32.9464012Z Getting Pages deployment status...
+2025-09-28T21:10:33.0416108Z Reported success!

@@ -1,0 +1,58 @@
+﻿2025-09-28T21:10:26.5749590Z ##[group]Run actions/upload-pages-artifact@v3
+2025-09-28T21:10:26.5750058Z with:
+2025-09-28T21:10:26.5750328Z   path: ./dist
+2025-09-28T21:10:26.5750616Z   name: github-pages
+2025-09-28T21:10:26.5750915Z   retention-days: 1
+2025-09-28T21:10:26.5751193Z env:
+2025-09-28T21:10:26.5751528Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2025-09-28T21:10:26.5752002Z   GITHUB_PAGES: true
+2025-09-28T21:10:26.5752299Z ##[endgroup]
+2025-09-28T21:10:26.5829629Z ##[group]Run echo ::group::Archive artifact
+2025-09-28T21:10:26.5829932Z [36;1mecho ::group::Archive artifact[0m
+2025-09-28T21:10:26.5830164Z [36;1mtar \[0m
+2025-09-28T21:10:26.5830381Z [36;1m  --dereference --hard-dereference \[0m
+2025-09-28T21:10:26.5830655Z [36;1m  --directory "$INPUT_PATH" \[0m
+2025-09-28T21:10:26.5830938Z [36;1m  -cvf "$RUNNER_TEMP/artifact.tar" \[0m
+2025-09-28T21:10:26.5831191Z [36;1m  --exclude=.git \[0m
+2025-09-28T21:10:26.5831413Z [36;1m  --exclude=.github \[0m
+2025-09-28T21:10:26.5831623Z [36;1m  .[0m
+2025-09-28T21:10:26.5831822Z [36;1mecho ::endgroup::[0m
+2025-09-28T21:10:26.5993749Z shell: /usr/bin/sh -e {0}
+2025-09-28T21:10:26.5993982Z env:
+2025-09-28T21:10:26.5994211Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2025-09-28T21:10:26.5994496Z   GITHUB_PAGES: true
+2025-09-28T21:10:26.5994702Z   INPUT_PATH: ./dist
+2025-09-28T21:10:26.5994888Z ##[endgroup]
+2025-09-28T21:10:26.6060757Z ##[group]Archive artifact
+2025-09-28T21:10:26.6073843Z ./
+2025-09-28T21:10:26.6074160Z ./index.html
+2025-09-28T21:10:26.6074455Z ./assets/
+2025-09-28T21:10:26.6074805Z ./assets/index-rfGZ5N0L.js
+2025-09-28T21:10:26.6077533Z ./assets/index-C8iAIFxz.css
+2025-09-28T21:10:26.6078397Z ./starry-night-bg.jpg
+2025-09-28T21:10:26.6081241Z ./favicon.ico
+2025-09-28T21:10:26.6084166Z ##[endgroup]
+2025-09-28T21:10:26.6142597Z ##[group]Run actions/upload-artifact@v4
+2025-09-28T21:10:26.6143085Z with:
+2025-09-28T21:10:26.6143322Z   name: github-pages
+2025-09-28T21:10:26.6143556Z   path: /home/runner/work/_temp/artifact.tar
+2025-09-28T21:10:26.6143827Z   retention-days: 1
+2025-09-28T21:10:26.6144015Z   if-no-files-found: error
+2025-09-28T21:10:26.6144230Z   compression-level: 6
+2025-09-28T21:10:26.6144418Z   overwrite: false
+2025-09-28T21:10:26.6144603Z   include-hidden-files: false
+2025-09-28T21:10:26.6144808Z env:
+2025-09-28T21:10:26.6145024Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2025-09-28T21:10:26.6145294Z   GITHUB_PAGES: true
+2025-09-28T21:10:26.6145475Z ##[endgroup]
+2025-09-28T21:10:26.8552226Z With the provided path, there will be 1 file uploaded
+2025-09-28T21:10:26.8558866Z Artifact name is valid!
+2025-09-28T21:10:26.8559939Z Root directory input is valid!
+2025-09-28T21:10:26.9873393Z Beginning upload of artifact content to blob storage
+2025-09-28T21:10:27.1568770Z Uploaded bytes 422038
+2025-09-28T21:10:27.1795713Z Finished uploading artifact content to blob storage!
+2025-09-28T21:10:27.1800289Z SHA256 digest of uploaded artifact zip is 6826b2d0c23d9aebf00d34e16b2b14b2d993701ba525ed81f6afbace41091f89
+2025-09-28T21:10:27.1803948Z Finalizing artifact upload
+2025-09-28T21:10:27.2633350Z Artifact github-pages.zip successfully finalized. Artifact ID 4126935734
+2025-09-28T21:10:27.2634683Z Artifact github-pages has been successfully uploaded! Final size is 422038 bytes. Artifact ID is 4126935734
+2025-09-28T21:10:27.2641784Z Artifact download URL: https://github.com/franksiereveld/DCO2/actions/runs/18079866603/artifacts/4126935734

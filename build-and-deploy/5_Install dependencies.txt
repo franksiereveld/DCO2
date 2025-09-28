@@ -1,0 +1,78 @@
+﻿2025-09-28T21:10:22.0458170Z ##[group]Run pnpm install --frozen-lockfile
+2025-09-28T21:10:22.0458562Z [36;1mpnpm install --frozen-lockfile[0m
+2025-09-28T21:10:22.0497487Z shell: /usr/bin/bash -e {0}
+2025-09-28T21:10:22.0497741Z env:
+2025-09-28T21:10:22.0498022Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2025-09-28T21:10:22.0498298Z ##[endgroup]
+2025-09-28T21:10:22.5027580Z Lockfile is up to date, resolution step is skipped
+2025-09-28T21:10:22.5587718Z Progress: resolved 1, reused 0, downloaded 0, added 0
+2025-09-28T21:10:22.6459741Z Packages: +376
+2025-09-28T21:10:22.6460506Z ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2025-09-28T21:10:23.3088521Z Progress: resolved 376, reused 376, downloaded 0, added 376, done
+2025-09-28T21:10:23.5260537Z 
+2025-09-28T21:10:23.5261162Z dependencies:
+2025-09-28T21:10:23.5267134Z + @hookform/resolvers 5.0.1
+2025-09-28T21:10:23.5267691Z + @radix-ui/react-accordion 1.2.10
+2025-09-28T21:10:23.5268255Z + @radix-ui/react-alert-dialog 1.1.13
+2025-09-28T21:10:23.5268855Z + @radix-ui/react-aspect-ratio 1.1.6
+2025-09-28T21:10:23.5269338Z + @radix-ui/react-avatar 1.1.9
+2025-09-28T21:10:23.5269792Z + @radix-ui/react-checkbox 1.3.1
+2025-09-28T21:10:23.5270271Z + @radix-ui/react-collapsible 1.1.10
+2025-09-28T21:10:23.5270805Z + @radix-ui/react-context-menu 2.2.14
+2025-09-28T21:10:23.5271326Z + @radix-ui/react-dialog 1.1.13
+2025-09-28T21:10:23.5271851Z + @radix-ui/react-dropdown-menu 2.1.14
+2025-09-28T21:10:23.5272406Z + @radix-ui/react-hover-card 1.1.13
+2025-09-28T21:10:23.5273181Z + @radix-ui/react-label 2.1.6
+2025-09-28T21:10:23.5273700Z + @radix-ui/react-menubar 1.1.14
+2025-09-28T21:10:23.5274236Z + @radix-ui/react-navigation-menu 1.2.12
+2025-09-28T21:10:23.5275172Z + @radix-ui/react-popover 1.1.13
+2025-09-28T21:10:23.5275727Z + @radix-ui/react-progress 1.1.6
+2025-09-28T21:10:23.5276240Z + @radix-ui/react-radio-group 1.3.6
+2025-09-28T21:10:23.5276771Z + @radix-ui/react-scroll-area 1.2.8
+2025-09-28T21:10:23.5277321Z + @radix-ui/react-select 2.2.4
+2025-09-28T21:10:23.5277863Z + @radix-ui/react-separator 1.1.6
+2025-09-28T21:10:23.5278413Z + @radix-ui/react-slider 1.3.4
+2025-09-28T21:10:23.5278871Z + @radix-ui/react-slot 1.2.2
+2025-09-28T21:10:23.5279356Z + @radix-ui/react-switch 1.2.4
+2025-09-28T21:10:23.5279836Z + @radix-ui/react-tabs 1.1.11
+2025-09-28T21:10:23.5280305Z + @radix-ui/react-toggle 1.1.8
+2025-09-28T21:10:23.5280833Z + @radix-ui/react-toggle-group 1.1.9
+2025-09-28T21:10:23.5281376Z + @radix-ui/react-tooltip 1.2.6
+2025-09-28T21:10:23.5281918Z + @tailwindcss/vite 4.1.7
+2025-09-28T21:10:23.5282384Z + class-variance-authority 0.7.1
+2025-09-28T21:10:23.5282786Z + clsx 2.1.1
+2025-09-28T21:10:23.5283292Z + cmdk 1.1.1
+2025-09-28T21:10:23.5283587Z + date-fns 4.1.0
+2025-09-28T21:10:23.5283962Z + embla-carousel-react 8.6.0
+2025-09-28T21:10:23.5284375Z + framer-motion 12.15.0
+2025-09-28T21:10:23.5284742Z + input-otp 1.4.2
+2025-09-28T21:10:23.5285093Z + lucide-react 0.510.0
+2025-09-28T21:10:23.5285444Z + next-themes 0.4.6
+2025-09-28T21:10:23.5285772Z + react 19.1.0
+2025-09-28T21:10:23.5286160Z + react-day-picker 8.10.1
+2025-09-28T21:10:23.5286557Z + react-dom 19.1.0
+2025-09-28T21:10:23.5286922Z + react-hook-form 7.56.3
+2025-09-28T21:10:23.5287383Z + react-resizable-panels 3.0.2
+2025-09-28T21:10:23.5287841Z + react-router-dom 7.6.1
+2025-09-28T21:10:23.5288243Z + recharts 2.15.3
+2025-09-28T21:10:23.5288570Z + sonner 2.0.3
+2025-09-28T21:10:23.5288919Z + tailwind-merge 3.3.0
+2025-09-28T21:10:23.5289303Z + tailwindcss 4.1.7
+2025-09-28T21:10:23.5289645Z + vaul 1.1.2
+2025-09-28T21:10:23.5289951Z + zod 3.24.4
+2025-09-28T21:10:23.5290144Z 
+2025-09-28T21:10:23.5290290Z devDependencies:
+2025-09-28T21:10:23.5290633Z + @eslint/js 9.26.0
+2025-09-28T21:10:23.5291001Z + @types/react 19.1.4
+2025-09-28T21:10:23.5291388Z + @types/react-dom 19.1.5
+2025-09-28T21:10:23.5291806Z + @vitejs/plugin-react 4.4.1
+2025-09-28T21:10:23.5292208Z + eslint 9.26.0
+2025-09-28T21:10:23.5292644Z + eslint-plugin-react-hooks 5.2.0
+2025-09-28T21:10:23.5293377Z + eslint-plugin-react-refresh 0.4.20
+2025-09-28T21:10:23.5294190Z + globals 16.1.0
+2025-09-28T21:10:23.5294574Z + tw-animate-css 1.2.9
+2025-09-28T21:10:23.5294925Z + vite 6.3.5
+2025-09-28T21:10:23.5295112Z 
+2025-09-28T21:10:23.5298452Z ╭ Warning ─────────────────────────────────────────────────────────────────────╮│                                                                              ││   Ignored build scripts: @tailwindcss/oxide, esbuild.                        ││   Run "pnpm approve-builds" to pick which dependencies should be allowed     ││   to run scripts.                                                            ││                                                                              │╰──────────────────────────────────────────────────────────────────────────────╯
+2025-09-28T21:10:23.5299926Z 
+2025-09-28T21:10:23.5457704Z Done in 1.4s using pnpm v10.4.1

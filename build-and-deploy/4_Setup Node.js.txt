@@ -1,0 +1,24 @@
+﻿2025-09-28T21:10:18.3789566Z ##[group]Run actions/setup-node@v4
+2025-09-28T21:10:18.3789850Z with:
+2025-09-28T21:10:18.3790020Z   node-version: 20
+2025-09-28T21:10:18.3790203Z   cache: pnpm
+2025-09-28T21:10:18.3790371Z   always-auth: false
+2025-09-28T21:10:18.3790562Z   check-latest: false
+2025-09-28T21:10:18.3790886Z   token: ***
+2025-09-28T21:10:18.3791108Z env:
+2025-09-28T21:10:18.3791347Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2025-09-28T21:10:18.3791625Z ##[endgroup]
+2025-09-28T21:10:18.5672056Z Found in cache @ /opt/hostedtoolcache/node/20.19.5/x64
+2025-09-28T21:10:18.5678961Z ##[group]Environment details
+2025-09-28T21:10:20.2602502Z node: v20.19.5
+2025-09-28T21:10:20.2603085Z npm: 10.8.2
+2025-09-28T21:10:20.2603369Z yarn: 1.22.22
+2025-09-28T21:10:20.2604729Z ##[endgroup]
+2025-09-28T21:10:20.2628492Z [command]/home/runner/setup-pnpm/node_modules/.bin/pnpm store path --silent
+2025-09-28T21:10:20.7612140Z /home/runner/setup-pnpm/node_modules/.bin/store/v10
+2025-09-28T21:10:20.9037514Z Cache hit for: node-cache-Linux-x64-pnpm-579db8bc29f58ae67b0a6042d348c1e1404bf8626697286a9020235a5019bad1
+2025-09-28T21:10:21.2633905Z Received 37484161 of 37484161 (100.0%), 115.7 MBs/sec
+2025-09-28T21:10:21.2634839Z Cache Size: ~36 MB (37484161 B)
+2025-09-28T21:10:21.2665910Z [command]/usr/bin/tar -xf /home/runner/work/_temp/2ef10c82-1af4-4490-bc66-56efbdce81f6/cache.tzst -P -C /home/runner/work/DCO2/DCO2 --use-compress-program unzstd
+2025-09-28T21:10:22.0227279Z Cache restored successfully
+2025-09-28T21:10:22.0302798Z Cache restored from key: node-cache-Linux-x64-pnpm-579db8bc29f58ae67b0a6042d348c1e1404bf8626697286a9020235a5019bad1

@@ -1,0 +1,7 @@
+﻿2025-09-28T21:10:26.3449900Z ##[group]Run actions/configure-pages@v4
+2025-09-28T21:10:26.3450186Z with:
+2025-09-28T21:10:26.3450467Z   token: ***
+2025-09-28T21:10:26.3450646Z   enablement: false
+2025-09-28T21:10:26.3450857Z env:
+2025-09-28T21:10:26.3451074Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2025-09-28T21:10:26.3451361Z ##[endgroup]

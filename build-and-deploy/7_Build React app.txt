@@ -1,0 +1,20 @@
+﻿2025-09-28T21:10:23.5901277Z ##[group]Run pnpm run build
+2025-09-28T21:10:23.5901541Z [36;1mpnpm run build[0m
+2025-09-28T21:10:23.5930762Z shell: /usr/bin/bash -e {0}
+2025-09-28T21:10:23.5931083Z env:
+2025-09-28T21:10:23.5931324Z   PNPM_HOME: /home/runner/setup-pnpm/node_modules/.bin
+2025-09-28T21:10:23.5931622Z   CI: false
+2025-09-28T21:10:23.5931786Z ##[endgroup]
+2025-09-28T21:10:23.9946550Z 
+2025-09-28T21:10:23.9947525Z > dco2-professional@0.0.0 build /home/runner/work/DCO2/DCO2
+2025-09-28T21:10:23.9948440Z > vite build
+2025-09-28T21:10:23.9948617Z 
+2025-09-28T21:10:24.8216068Z [36mvite v6.3.5 [32mbuilding for production...[36m[39m
+2025-09-28T21:10:24.9189483Z transforming...
+2025-09-28T21:10:25.9439699Z [32m✓[39m 4 modules transformed.
+2025-09-28T21:10:26.1564022Z rendering chunks...
+2025-09-28T21:10:26.1606891Z computing gzip size...
+2025-09-28T21:10:26.1727399Z [2mdist/[22m[32mindex.html                 [39m[1m[2m  0.69 kB[22m[1m[22m[2m │ gzip:   0.43 kB[22m
+2025-09-28T21:10:26.1728946Z [2mdist/[22m[2massets/[22m[35mindex-C8iAIFxz.css  [39m[1m[2m 96.93 kB[22m[1m[22m[2m │ gzip:  15.91 kB[22m
+2025-09-28T21:10:26.1730818Z [2mdist/[22m[2massets/[22m[36mindex-rfGZ5N0L.js   [39m[1m[2m356.55 kB[22m[1m[22m[2m │ gzip: 111.53 kB[22m
+2025-09-28T21:10:26.1732128Z [32m✓ built in 1.31s[39m
