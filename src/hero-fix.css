@@ -1,0 +1,41 @@
+/* IMMEDIATE HERO FIX - Force proper layout */
+.hero-background {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  position: relative !important;
+}
+
+.hero-background > * {
+  width: 100% !important;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+.hero-background h1,
+.hero-background h2,
+.hero-background p {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.hero-background .flex {
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Hide any floating elements that interfere */
+.hero-background [style*="position: absolute"],
+.hero-background [style*="position: fixed"] {
+  display: none !important;
+}
+
+/* Force center alignment for all text elements */
+.hero-background * {
+  text-align: center !important;
+}
