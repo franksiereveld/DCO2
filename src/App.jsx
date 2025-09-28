@@ -152,7 +152,7 @@ function App() {
   ]
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
         <div className="max-w-7xl mx-auto container-padding">
@@ -162,6 +162,7 @@ function App() {
                 <span className="text-white font-bold text-sm">DC</span>
               </div>
               <span className="font-display text-xl text-gray-900">DCO2.com</span>
+              <span className="font-display text-xl text-gray-600">ECO2.ai</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
