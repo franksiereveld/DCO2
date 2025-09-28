@@ -364,7 +364,7 @@ function App() {
 
       {/* Competitive Advantages */}
       <section id="advantages" className="section-padding relative" style={{
-        backgroundImage: 'url(/datacenter-nature-new.jpg)',
+        backgroundImage: 'url(/dark-forest-landscape.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
@@ -569,59 +569,7 @@ function App() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section id="cta" className="section-padding gradient-primary text-white relative">
-        <div className="max-w-7xl mx-auto container-padding">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={isVisible.cta ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.8 }}
-            >
-              <h2 className="text-4xl lg:text-5xl font-display mb-6">
-                Ready to Transform Your Enterprise?
-              </h2>
-              <p className="text-xl text-white/90 mb-8">
-                Join the Green AI revolution. Reduce technical debt, increase efficiency, 
-                and drive innovation with our integrated AI platform.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100">
-                  Schedule Consultation
-                  <ArrowRight className="w-5 h-5 ml-2" />
-                </Button>
-                <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
-                  Download Whitepaper
-                </Button>
-              </div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={isVisible.cta ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
-                <img
-                  src="/server-rack.jpg"
-                  alt="Sophisticated Server Rack"
-                  className="w-full h-80 object-cover rounded-xl"
-                />
-                <div className="mt-6 text-center">
-                  <h3 className="text-xl font-heading text-gray-900 mb-2">
-                    Enterprise-Grade Infrastructure
-                  </h3>
-                  <p className="text-gray-600">
-                    State-of-the-art server racks with advanced cooling and monitoring systems
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
