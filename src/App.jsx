@@ -569,7 +569,7 @@ function App() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding gradient-primary text-white relative">
+      <section id="cta" className="section-padding gradient-primary text-white relative">
         <div className="max-w-7xl mx-auto container-padding">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
