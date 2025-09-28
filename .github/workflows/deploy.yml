@@ -1,0 +1,88 @@
+name: Deploy React App to GitHub Pages
+
+on:
+  push:
+    branches: [ branch-2 ]
+  pull_request:
+    branches: [ branch-2 ]
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Clear build cache
+      run: |
+        rm -rf dist
+        rm -rf node_modules/.vite
+        
+    - name: Build React app
+      run: npm run build
+      env:
+        CI: false
+        
+    - name: List build output
+      run: |
+        echo "Build completed. Contents of dist directory:"
+        ls -la dist/
+        echo "Contents of dist/assets:"
+        ls -la dist/assets/ || echo "No assets directory"
+        
+    - name: Verify build contains ECO2.ai branding
+      run: |
+        echo "Checking for ECO2.ai in built files..."
+        if grep -r "ECO2.ai" dist/; then
+          echo "✅ ECO2.ai branding found in build"
+        else
+          echo "❌ ECO2.ai branding NOT found in build"
+          exit 1
+        fi
+        
+    - name: Verify build contains hero-background class
+      run: |
+        echo "Checking for hero-background class in built files..."
+        if grep -r "hero-background" dist/; then
+          echo "✅ hero-background class found in build"
+        else
+          echo "❌ hero-background class NOT found in build"
+          echo "This may be expected if CSS is minified differently"
+        fi
+        
+    - name: Setup Pages
+      uses: actions/configure-pages@v4
+      
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: './dist'
+        
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
