@@ -185,12 +185,12 @@ function App() {
       
       {/* Hero Section */}
       <section className="hero-background relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="relative z-10 text-center text-white w-full mx-auto px-4">
+        <div className="relative z-10 w-full flex items-center justify-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="flex flex-col items-center justify-center text-center w-full max-w-6xl mx-auto"
+            className="text-center text-white max-w-6xl mx-auto"
           >
             <Badge className="mb-6 bg-white/10 text-white border-white/20 backdrop-blur-sm">
               The Green AI Factory
