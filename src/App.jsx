@@ -28,6 +28,7 @@ import {
   Bot,
   Layers,
   Wind,
+  Play,
   Thermometer
 } from 'lucide-react'
 
@@ -162,8 +163,7 @@ function App() {
               <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">DC</span>
               </div>
-              <span className="font-display text-xl text-gray-900">DCO2.com</span>
-              <span className="font-display text-xl text-gray-600">ECO2.ai</span> {/* Updated branding */}
+              <span className="font-display text-xl text-gray-900">DCO2.com & ECO2.ai</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -186,34 +186,41 @@ function App() {
       
       {/* Hero Section */}
       <section className="hero-background relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="relative z-10 text-center text-white max-w-5xl mx-auto container-padding">
+        <div className="relative z-10 text-center text-white max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="flex flex-col items-center"
           >
             <Badge className="mb-6 bg-white/10 text-white border-white/20 backdrop-blur-sm">
               The Green AI Factory
             </Badge>
             
-            <h1 className="text-5xl lg:text-7xl font-display mb-6 leading-tight">
+            <h1 className="text-5xl lg:text-7xl font-display mb-6 leading-tight text-center">
               AI-Powered Enterprise
               <span className="block gradient-text bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
                 Transformation
               </span>
             </h1>
             
-            <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed text-center">
               Full-stack IaaS + PaaS + AI services independent of hyperscalers. 
               Reduce technical debt with agentic AI workflows connected end-to-end.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="gradient-primary text-white hover:opacity-90 transition-opacity">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full max-w-md">
+              <Button size="lg" className="gradient-primary text-white hover:opacity-90 transition-opacity w-full sm:w-auto">
                 Start Your AI Transformation
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
-              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="border-white/30 text-white hover:bg-white/10 hover:border-white/50 transition-all duration-200 w-full sm:w-auto"
+                onClick={() => window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')}
+              >
+                <Play className="w-5 h-5 mr-2" />
                 Watch Demo
               </Button>
             </div>
@@ -507,11 +514,11 @@ function App() {
               <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">DC</span>
               </div>
-              <span className="font-display text-xl">DCO2.com</span>
+              <span className="font-display text-xl">DCO2.com & ECO2.ai</span>
             </div>
             
             <p className="text-gray-400">
-              © 2024 DCO2.com. All rights reserved.
+              © 2024 DCO2.com & ECO2.ai. All rights reserved.
             </p>
           </div>
         </div>
