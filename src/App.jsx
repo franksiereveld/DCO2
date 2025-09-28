@@ -162,7 +162,7 @@ function App() {
                 <span className="text-white font-bold text-sm">DC</span>
               </div>
               <span className="font-display text-xl text-gray-900">DCO2.com</span>
-              <span className="font-display text-xl text-gray-600">ECO2.ai</span>
+              <span className="font-display text-xl text-gray-600">ECO2.ai</span> {/* Updated branding */}
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
