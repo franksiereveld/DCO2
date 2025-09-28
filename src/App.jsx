@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import './App.css'
 import './hero-background.css'
@@ -185,12 +185,12 @@ function App() {
       
       {/* Hero Section */}
       <section className="hero-background relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="relative z-10 text-center text-white max-w-6xl mx-auto container-padding">
+        <div className="relative z-10 text-center text-white w-full mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="flex flex-col items-center justify-center text-center w-full"
+            className="flex flex-col items-center justify-center text-center w-full max-w-6xl mx-auto"
           >
             <Badge className="mb-6 bg-white/10 text-white border-white/20 backdrop-blur-sm">
               The Green AI Factory
@@ -272,7 +272,7 @@ function App() {
                 animate={isVisible.services ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
               >
-                <Card className="h-full hover-lift border-0 shadow-lg bg-white/90 backdrop-blur-sm">
+                <Card className="h-full hover-lift border-0 shadow-lg bg-white/70 backdrop-blur-md">
                   <CardHeader className="text-center pb-4">
                     <div className="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-4 text-white">
                       {service.icon}
