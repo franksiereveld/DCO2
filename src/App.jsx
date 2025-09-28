@@ -163,7 +163,7 @@ function App() {
               <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">DC</span>
               </div>
-              <span className="font-display text-xl text-gray-900">DCO2.com & ECO2.ai</span>
+              <span className="font-display text-xl text-gray-900">DCO2.com / ECO2.ai</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -514,11 +514,11 @@ function App() {
               <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">DC</span>
               </div>
-              <span className="font-display text-xl">DCO2.com & ECO2.ai</span>
+              <span className="font-display text-xl">DCO2.com / ECO2.ai</span>
             </div>
             
             <p className="text-gray-400">
-              © 2024 DCO2.com & ECO2.ai. All rights reserved.
+              © 2024 DCO2.com / ECO2.ai. All rights reserved.
             </p>
           </div>
         </div>
