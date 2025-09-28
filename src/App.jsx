@@ -184,27 +184,26 @@ function App() {
       <div className="hero-background" style={{display: 'none'}}></div>
       
       {/* Hero Section */}
-      <section className="hero-background relative min-h-screen overflow-hidden" style={{display: 'grid', placeItems: 'center'}}>
-        <div className="relative z-10 w-full" style={{textAlign: 'center'}}>
+      <section className="hero-background relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="relative z-10 max-w-7xl mx-auto container-padding">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-white"
-            style={{textAlign: 'center'}}
+            className="text-center"
           >
             <Badge className="mb-6 bg-white/10 text-white border-white/20 backdrop-blur-sm">
               The Green AI Factory
             </Badge>
             
-            <h1 className="text-5xl lg:text-7xl font-display mb-6 leading-tight text-center">
+            <h1 className="text-5xl lg:text-7xl font-display text-white mb-6 leading-tight">
               AI-Powered Enterprise
               <span className="block gradient-text bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
                 Transformation
               </span>
             </h1>
             
-            <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed text-center" style={{textAlign: 'center', maxWidth: 'none'}}>
+            <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
               Full-stack IaaS + PaaS + AI services independent of hyperscalers. 
               Reduce technical debt with agentic AI workflows connected end-to-end.
             </p>
@@ -588,7 +587,7 @@ function App() {
                 <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100">
                   Schedule Consultation
                 </Button>
-                <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 bg-transparent">
                   Download Whitepaper
                 </Button>
               </div>
