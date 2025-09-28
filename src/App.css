@@ -316,3 +316,29 @@ html {
 /* Build timestamp: Sun Sep 28 15:32:44 EDT 2025 */
 /* Build trigger Sun Sep 28 16:58:39 EDT 2025 */
 /* Force rebuild Sun Sep 28 17:08:49 EDT 2025 */
+
+
+/* FORCE HERO TEXT CENTERING - OVERRIDE ALL OTHER STYLES */
+.hero-background {
+  text-align: center !important;
+}
+
+.hero-background * {
+  text-align: center !important;
+}
+
+.hero-background h1 {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.hero-background p {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.hero-background div {
+  text-align: center !important;
+}
