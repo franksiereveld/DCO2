@@ -185,6 +185,7 @@ function App() {
       
       {/* Hero Section */}
       <section className="hero-background relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* DEPLOYMENT CHECK: ${new Date().toISOString()} */}
         <div className="relative z-10 max-w-7xl mx-auto container-padding">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
