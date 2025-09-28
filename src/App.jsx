@@ -185,34 +185,38 @@ function App() {
       
       {/* Hero Section */}
       <section className="hero-background relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="relative z-10 text-center text-white max-w-5xl mx-auto container-padding">
+        <div className="relative z-10 text-center text-white max-w-6xl mx-auto container-padding">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="flex flex-col items-center"
           >
             <Badge className="mb-6 bg-white/10 text-white border-white/20 backdrop-blur-sm">
               The Green AI Factory
             </Badge>
             
-            <h1 className="text-5xl lg:text-7xl font-display mb-6 leading-tight">
+            <h1 className="text-5xl lg:text-7xl font-display mb-6 leading-tight text-center">
               AI-Powered Enterprise
               <span className="block gradient-text bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
                 Transformation
               </span>
             </h1>
             
-            <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed text-center">
               Full-stack IaaS + PaaS + AI services independent of hyperscalers. 
               Reduce technical debt with agentic AI workflows connected end-to-end.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="gradient-primary text-white hover:opacity-90 transition-opacity">
                 Start Your AI Transformation
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
-              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="border-white/60 text-white hover:bg-white/20 bg-white/10 backdrop-blur-sm border-2">
+                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
                 Watch Demo
               </Button>
             </div>
@@ -237,18 +241,24 @@ function App() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="section-padding bg-gray-50">
-        <div className="max-w-7xl mx-auto container-padding">
+      <section id="services" className="section-padding relative" style={{
+        backgroundImage: 'url(/pine-forest-night.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}>
+        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="relative z-10 max-w-7xl mx-auto container-padding">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isVisible.services ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-display text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-display text-white mb-6">
               Full-Stack AI Infrastructure
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               Unlike hyperscalers, we provide integrated IaaS, PaaS, and AI services 
               designed specifically for enterprise AI transformation.
             </p>
@@ -352,18 +362,24 @@ function App() {
       </section>
 
       {/* Competitive Advantages */}
-      <section id="advantages" className="section-padding bg-white">
-        <div className="max-w-7xl mx-auto container-padding">
+      <section id="advantages" className="section-padding relative" style={{
+        backgroundImage: 'url(/datacenter-forest.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}>
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="relative z-10 max-w-7xl mx-auto container-padding">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isVisible.advantages ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl lg:text-5xl font-display text-gray-900 mb-6">
+            <h2 className="text-4xl lg:text-5xl font-display text-white mb-6">
               Why Choose DCO2
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               We're not just another cloud provider. We're your AI transformation partner 
               with unique advantages that set us apart.
             </p>
@@ -469,6 +485,94 @@ function App() {
         </div>
       </section>
 
+      {/* Infrastructure Section */}
+      <section id="infrastructure" className="section-padding relative" style={{
+        backgroundImage: 'url(/datacenter-pod.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}>
+        <div className="absolute inset-0 bg-black/70"></div>
+        <div className="relative z-10 max-w-7xl mx-auto container-padding">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={isVisible.infrastructure ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl lg:text-5xl font-display text-white mb-6">
+              Modular Data Center Architecture
+            </h2>
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+              Our smart pod data centers deliver enterprise-grade performance with 
+              unprecedented flexibility and efficiency.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={isVisible.infrastructure ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.1 }}
+            >
+              <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover-lift">
+                <CardHeader className="text-center">
+                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-4 text-white">
+                    <Server className="w-6 h-6" />
+                  </div>
+                  <CardTitle className="text-white text-lg font-heading">
+                    Smart Pod Design
+                  </CardTitle>
+                  <CardDescription className="text-gray-200 text-sm">
+                    Prefabricated modules with integrated power, cooling, and monitoring systems.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={isVisible.infrastructure ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover-lift">
+                <CardHeader className="text-center">
+                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-4 text-white">
+                    <Database className="w-6 h-6" />
+                  </div>
+                  <CardTitle className="text-white text-lg font-heading">
+                    Scalable Infrastructure
+                  </CardTitle>
+                  <CardDescription className="text-gray-200 text-sm">
+                    Rapid deployment and expansion with standardized rack solutions.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={isVisible.infrastructure ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.3 }}
+            >
+              <Card className="bg-white/10 border-white/20 backdrop-blur-sm hover-lift">
+                <CardHeader className="text-center">
+                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-4 text-white">
+                    <Network className="w-6 h-6" />
+                  </div>
+                  <CardTitle className="text-white text-lg font-heading">
+                    Edge Computing
+                  </CardTitle>
+                  <CardDescription className="text-gray-200 text-sm">
+                    Distributed processing capabilities for low-latency AI applications.
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="section-padding gradient-primary text-white">
         <div className="max-w-4xl mx-auto container-padding text-center">
@@ -501,7 +605,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto container-padding">
-          <div className="flex items-center justify-between">
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="flex items-center space-x-3">
               <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">DC</span>
@@ -509,9 +613,36 @@ function App() {
               <span className="font-display text-xl">DCO2.com / ECO2.ai</span>
             </div>
             
-            <p className="text-gray-400">
-              © 2024 DCO2.com / ECO2.ai. All rights reserved.
-            </p>
+            <div>
+              <h4 className="font-heading text-white mb-4">Contact</h4>
+              <div className="space-y-2 text-gray-400">
+                <p>Investor Relations:</p>
+                <a href="mailto:ir@eco2.ai" className="text-blue-400 hover:text-blue-300 transition-colors">
+                  ir@eco2.ai
+                </a>
+              </div>
+            </div>
+            
+            <div>
+              <h4 className="font-heading text-white mb-4">Solutions</h4>
+              <div className="space-y-2 text-gray-400">
+                <a href="#services" className="block hover:text-white transition-colors">Infrastructure as a Service</a>
+                <a href="#services" className="block hover:text-white transition-colors">Platform as a Service</a>
+                <a href="#services" className="block hover:text-white transition-colors">AI Services</a>
+              </div>
+            </div>
+          </div>
+          
+          <div className="border-t border-gray-800 pt-8">
+            <div className="flex flex-col md:flex-row items-center justify-between">
+              <p className="text-gray-400 text-center md:text-left">
+                © 2025 DCO2.com / ECO2.ai. All rights reserved.
+              </p>
+              <div className="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
