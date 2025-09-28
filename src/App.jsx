@@ -184,14 +184,14 @@ function App() {
       <div className="hero-background" style={{display: 'none'}}></div>
       
       {/* Hero Section */}
-      <section className="hero-background relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="relative z-10 w-full text-center" style={{textAlign: 'center', width: '100%'}}>
+      <section className="hero-background relative min-h-screen overflow-hidden" style={{display: 'grid', placeItems: 'center'}}>
+        <div className="relative z-10 w-full" style={{textAlign: 'center'}}>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-white text-center"
-            style={{textAlign: 'center', width: '100%', margin: '0 auto'}}
+            className="text-white"
+            style={{textAlign: 'center'}}
           >
             <Badge className="mb-6 bg-white/10 text-white border-white/20 backdrop-blur-sm">
               The Green AI Factory
@@ -204,7 +204,7 @@ function App() {
               </span>
             </h1>
             
-            <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed text-center">
+            <p className="text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed text-center" style={{textAlign: 'center', maxWidth: 'none'}}>
               Full-stack IaaS + PaaS + AI services independent of hyperscalers. 
               Reduce technical debt with agentic AI workflows connected end-to-end.
             </p>
