@@ -185,26 +185,25 @@ function App() {
       
       {/* Hero Section */}
       <section className="hero-background relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="relative z-10 w-full px-4" style={{textAlign: 'center'}}>
+        <div className="relative z-10 w-full px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-white max-w-6xl mx-auto"
-            style={{textAlign: 'center'}}
+            className="text-white max-w-6xl mx-auto text-center"
           >
             <Badge className="mb-6 bg-white/10 text-white border-white/20 backdrop-blur-sm">
               The Green AI Factory
             </Badge>
             
-            <h1 className="text-5xl lg:text-7xl font-display mb-6 leading-tight">
+            <h1 className="text-5xl lg:text-7xl font-display mb-6 leading-tight text-center">
               AI-Powered Enterprise
               <span className="block gradient-text bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
                 Transformation
               </span>
             </h1>
             
-            <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed text-center">
               Full-stack IaaS + PaaS + AI services independent of hyperscalers. 
               Reduce technical debt with agentic AI workflows connected end-to-end.
             </p>
