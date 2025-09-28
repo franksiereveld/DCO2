@@ -185,12 +185,13 @@ function App() {
       
       {/* Hero Section */}
       <section className="hero-background relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="relative z-10 w-full px-4 text-center">
+        <div className="relative z-10 w-full text-center" style={{textAlign: 'center', width: '100%'}}>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-white max-w-6xl mx-auto text-center"
+            className="text-white text-center"
+            style={{textAlign: 'center', width: '100%', margin: '0 auto'}}
           >
             <Badge className="mb-6 bg-white/10 text-white border-white/20 backdrop-blur-sm">
               The Green AI Factory
@@ -569,6 +570,50 @@ function App() {
       </section>
 
 
+
+      {/* CTA Section */}
+      <section className="section-padding gradient-primary text-white relative">
+        <div className="max-w-7xl mx-auto container-padding">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl lg:text-5xl font-display mb-6">
+                Ready to Transform Your Enterprise?
+              </h2>
+              <p className="text-xl text-white/90 mb-8">
+                Join the Green AI revolution. Reduce technical debt, increase efficiency, 
+                and drive innovation with our integrated AI platform.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100">
+                  Schedule Consultation
+                </Button>
+                <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
+                  Download Whitepaper
+                </Button>
+              </div>
+            </div>
+            
+            <div className="relative">
+              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
+                <img
+                  src="/server-rack.jpg"
+                  alt="Sophisticated Server Rack"
+                  className="w-full h-80 object-cover rounded-xl"
+                />
+                <div className="mt-6 text-center">
+                  <h3 className="text-xl font-heading text-gray-900 mb-2">
+                    Enterprise-Grade Infrastructure
+                  </h3>
+                  <p className="text-gray-600">
+                    State-of-the-art server racks with advanced cooling and monitoring systems
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
