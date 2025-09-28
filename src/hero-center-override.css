@@ -1,0 +1,24 @@
+/* HERO CENTERING OVERRIDE - Force centering regardless of structure */
+.hero-background {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.hero-background * {
+  text-align: center !important;
+}
+
+.hero-background h1,
+.hero-background p,
+.hero-background div {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 100% !important;
+}
+
+/* Ensure buttons are centered */
+.hero-background .flex {
+  justify-content: center !important;
+}
