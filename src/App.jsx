@@ -180,14 +180,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat image-overlay"
-          style={{ backgroundImage: `url(${datacenterClean})` }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-purple-900/90" />
-        </div>
-        
+      <section className="hero-background relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="relative z-10 text-center text-white max-w-5xl mx-auto container-padding">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
