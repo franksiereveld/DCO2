@@ -190,7 +190,7 @@ function App() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="flex flex-col items-center"
+            className="flex flex-col items-center justify-center text-center w-full"
           >
             <Badge className="mb-6 bg-white/10 text-white border-white/20 backdrop-blur-sm">
               The Green AI Factory
@@ -242,12 +242,12 @@ function App() {
 
       {/* Services Section */}
       <section id="services" className="section-padding relative" style={{
-        backgroundImage: 'url(/pine-forest-night.jpg)',
+        backgroundImage: 'url(/pine-forest-new.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
       }}>
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/50"></div>
         <div className="relative z-10 max-w-7xl mx-auto container-padding">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -272,7 +272,7 @@ function App() {
                 animate={isVisible.services ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
               >
-                <Card className="h-full hover-lift border-0 shadow-lg">
+                <Card className="h-full hover-lift border-0 shadow-lg bg-white/90 backdrop-blur-sm">
                   <CardHeader className="text-center pb-4">
                     <div className="w-16 h-16 gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-4 text-white">
                       {service.icon}
@@ -363,12 +363,12 @@ function App() {
 
       {/* Competitive Advantages */}
       <section id="advantages" className="section-padding relative" style={{
-        backgroundImage: 'url(/datacenter-forest.jpg)',
+        backgroundImage: 'url(/datacenter-nature-new.jpg)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
       }}>
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 max-w-7xl mx-auto container-padding">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -397,10 +397,10 @@ function App() {
                 <div className="w-16 h-16 gradient-green rounded-2xl flex items-center justify-center mx-auto mb-6 text-white">
                   {advantage.icon}
                 </div>
-                <h3 className="text-xl font-heading text-gray-900 mb-4">
+                <h3 className="text-xl font-heading text-white mb-4">
                   {advantage.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-200 leading-relaxed">
                   {advantage.description}
                 </p>
               </motion.div>
@@ -486,13 +486,8 @@ function App() {
       </section>
 
       {/* Infrastructure Section */}
-      <section id="infrastructure" className="section-padding relative" style={{
-        backgroundImage: 'url(/datacenter-pod.jpg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
-      }}>
-        <div className="absolute inset-0 bg-black/70"></div>
+      <section id="infrastructure" className="section-padding hero-background relative">
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 max-w-7xl mx-auto container-padding">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -574,31 +569,56 @@ function App() {
       </section>
 
       {/* CTA Section */}
-      <section className="section-padding gradient-primary text-white">
-        <div className="max-w-4xl mx-auto container-padding text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={isVisible.cta ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="text-4xl lg:text-5xl font-display mb-6">
-              Ready to Transform Your Enterprise?
-            </h2>
-            <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Join the Green AI revolution. Reduce technical debt, increase efficiency, 
-              and drive innovation with our integrated AI platform.
-            </p>
+      <section className="section-padding gradient-primary text-white relative">
+        <div className="max-w-7xl mx-auto container-padding">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={isVisible.cta ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-4xl lg:text-5xl font-display mb-6">
+                Ready to Transform Your Enterprise?
+              </h2>
+              <p className="text-xl text-white/90 mb-8">
+                Join the Green AI revolution. Reduce technical debt, increase efficiency, 
+                and drive innovation with our integrated AI platform.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100">
+                  Schedule Consultation
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Button>
+                <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
+                  Download Whitepaper
+                </Button>
+              </div>
+            </motion.div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100">
-                Schedule Consultation
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Button>
-              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10">
-                Download Whitepaper
-              </Button>
-            </div>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              animate={isVisible.cta ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative"
+            >
+              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
+                <img
+                  src="/server-rack.jpg"
+                  alt="Sophisticated Server Rack"
+                  className="w-full h-80 object-cover rounded-xl"
+                />
+                <div className="mt-6 text-center">
+                  <h3 className="text-xl font-heading text-gray-900 mb-2">
+                    Enterprise-Grade Infrastructure
+                  </h3>
+                  <p className="text-gray-600">
+                    State-of-the-art server racks with advanced cooling and monitoring systems
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
