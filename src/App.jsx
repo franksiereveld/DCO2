@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import './App.css'
+import './hero-background.css'
 
 // Import professional images
 import datacenterClean from './assets/datacenter-clean.webp'
@@ -180,6 +181,9 @@ function App() {
         </div>
       </nav>
 
+      {/* Force hero-background CSS inclusion */}
+      <div className="hero-background" style={{display: 'none'}}></div>
+      
       {/* Hero Section */}
       <section className="hero-background relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="relative z-10 text-center text-white max-w-5xl mx-auto container-padding">
