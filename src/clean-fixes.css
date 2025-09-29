@@ -31,16 +31,29 @@
   margin: 2rem 0;
 }
 
-/* Hero Indicators - Proper Positioning */
-.hero-background .absolute {
-  position: relative;
-  margin-top: 3rem;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+/* Hero Indicators - Perfect Centering */
+.hero-background .absolute.bottom-8 {
+  position: absolute !important;
+  bottom: 2rem !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 2rem !important;
+  width: auto !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+/* Ensure indicators are centered on all screen sizes */
+@media (max-width: 768px) {
+  .hero-background .absolute.bottom-8 {
+    gap: 1rem !important;
+    bottom: 1rem !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
 }
 
 /* Modular Data Center Architecture - Fix Broken Boxes */

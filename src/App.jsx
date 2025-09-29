@@ -198,15 +198,15 @@ function App() {
             </Badge>
             
             <h1 className="text-5xl lg:text-7xl font-display text-white mb-6 leading-tight">
-              AI-Powered Enterprise
+              Green AI-Powered Enterprise
               <span className="block gradient-text bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
                 Transformation
               </span>
             </h1>
             
             <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Full-stack IaaS + PaaS + AI services independent of hyperscalers. 
-              Reduce technical debt with agentic AI workflows connected end-to-end.
+              Carbon negative, full stack AI services independent of hyperscalers. 
+              Transform your business with industry specific agentic AI use cases.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
