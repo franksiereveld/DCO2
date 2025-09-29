@@ -106,7 +106,7 @@ function App() {
     {
       icon: <Leaf className="w-6 h-6" />,
       title: "Carbon Negative Operations",
-      description: "100% renewable energy with on-site solar, wind, and forest carbon offsets"
+      description: "Using renewable energy plus on-site forest carbon offsets"
     },
     {
       icon: <Shield className="w-6 h-6" />,
@@ -172,9 +172,11 @@ function App() {
               <a href="#about" className="text-gray-600 hover:text-gray-900 transition-colors">About</a>
             </div>
 
-            <Button className="gradient-primary text-white hover:opacity-90 transition-opacity">
-              Get Started
-              <ArrowRight className="w-4 h-4 ml-2" />
+            <Button className="gradient-primary text-white hover:opacity-90 transition-opacity" asChild>
+              <a href="mailto:ir@eco2.ai?subject=Get Started Inquiry">
+                Get Started
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </a>
             </Button>
           </div>
         </div>
@@ -210,15 +212,19 @@ function App() {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="gradient-primary text-white hover:opacity-90 transition-opacity">
-                Start Your AI Transformation
-                <ArrowRight className="w-5 h-5 ml-2" />
+              <Button size="lg" className="gradient-primary text-white hover:opacity-90 transition-opacity" asChild>
+                <a href="mailto:ir@eco2.ai?subject=AI Transformation Inquiry">
+                  Start Your AI Transformation
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-white/60 text-white hover:bg-white/20 bg-white/10 backdrop-blur-sm border-2">
-                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z"/>
-                </svg>
-                Watch Demo
+              <Button size="lg" variant="outline" className="border-white/60 text-white hover:bg-white/20 bg-white/10 backdrop-blur-sm border-2" asChild>
+                <a href="/whitepaper.pdf" target="_blank">
+                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                  </svg>
+                  Read Whitepaper
+                </a>
               </Button>
             </div>
           </motion.div>
@@ -243,7 +249,7 @@ function App() {
 
       {/* Services Section */}
       <section id="services" className="section-padding relative" style={{
-        backgroundImage: 'url(/pine-forest-new.jpg)',
+        backgroundImage: 'url(/dark-forest-landscape.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundAttachment: 'fixed'
@@ -585,11 +591,15 @@ function App() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100">
-                  Schedule Consultation
+                <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100" asChild>
+                  <a href="mailto:ir@eco2.ai?subject=Schedule Consultation">
+                    Schedule Consultation
+                  </a>
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 bg-transparent">
-                  Download Whitepaper
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-gray-900 bg-transparent" asChild>
+                  <a href="/whitepaper.pdf" target="_blank">
+                    Download Whitepaper
+                  </a>
                 </Button>
               </div>
             </div>
