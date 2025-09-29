@@ -420,7 +420,7 @@ function App() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl lg:text-5xl font-display text-gray-900 mb-6">
-              Enterprise Success Stories
+              Example Use Cases
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               See how leading enterprises leverage our Green AI Factory to eliminate 
