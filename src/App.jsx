@@ -198,7 +198,7 @@ function App() {
             </Badge>
             
             <h1 className="text-5xl lg:text-7xl font-display text-white mb-6 leading-tight">
-              Green, AI-Powered 
+              <span className="text-green-400">Green,</span> AI-Powered 
               <span className="block gradient-text bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
                 Enterprise Transformation
               </span>
