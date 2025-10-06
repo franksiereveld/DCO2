@@ -1,0 +1,28 @@
+diff --git a/dist/index.html b/dist/index.html
+index e5f9627..dcbd942 100644
+--- a/dist/index.html
++++ b/dist/index.html
+@@ -7,8 +7,8 @@
+     <meta name="description" content="Full-stack IaaS + PaaS + AI services independent of hyperscalers. Reduce technical debt with agentic AI workflows. Carbon-negative data centers." />
+     <title>DCO2.com - Green AI Factory | Enterprise AI Transformation</title>
+ 
+-    <script type="module" crossorigin src="/index24782.js"></script>
+-    <link rel="stylesheet" crossorigin href="/index24782.css">
++    <script type="module" crossorigin src="/index60790.js"></script>
++    <link rel="stylesheet" crossorigin href="/index60790.css">
+   </head>
+   <body>
+     <div id="root"></div>
+diff --git a/src/App.jsx b/src/App.jsx
+index 64b956e..e90ed92 100644
+--- a/src/App.jsx
++++ b/src/App.jsx
+@@ -196,7 +196,7 @@ function App() {
+             className="text-center"
+           >
+             <Badge className="mb-6 bg-white/10 text-white border-white/20 backdrop-blur-sm">
+-              The Green AI Factory
++              NatureNeutral.AI
+             </Badge>
+             
+             <h1 className="text-5xl lg:text-7xl font-display text-white mb-6 leading-tight">
