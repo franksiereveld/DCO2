@@ -196,7 +196,7 @@ function App() {
             className="text-center"
           >
             <Badge className="mb-6 bg-white/10 text-white border-white/20 backdrop-blur-sm">
-              The Green AI Factory
+              NatureNeutral.AI
             </Badge>
             
             <h1 className="text-5xl lg:text-7xl font-display text-white mb-6 leading-tight">
