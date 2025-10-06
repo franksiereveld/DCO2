@@ -207,8 +207,8 @@ function App() {
             </h1>
             
             <p className="text-xl lg:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Carbon negative, full stack AI services independent of hyperscalers. 
-              Transform your business with industry specific agentic AI use cases.
+              Carbon negative, full stack AI services, independent of hyperscalers. 
+              Transform your business with industry specific, agentic use cases.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
