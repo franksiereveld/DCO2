@@ -8,6 +8,7 @@ import datacenterClean from './assets/datacenter-clean.webp'
 import datacenterModern from './assets/datacenter-modern.jpg'
 import sustainableTech from './assets/sustainable-tech.jpg'
 import aiProfessional from './assets/ai-professional.jpg'
+import eco2Logo from './assets/eco2-logo.png'
 
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
@@ -159,9 +160,7 @@ function App() {
         <div className="max-w-7xl mx-auto container-padding">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">DC</span>
-              </div>
+              <img src={eco2Logo} alt="ECO2.ai Logo" className="w-8 h-8" />
               <span className="font-display text-xl text-gray-900">DCO2.com &#47; ECO2.ai</span>
             </div>
             
