@@ -14,24 +14,32 @@ const admins = [
     }
 ];
 
-// Sample whitepaper downloads data
-const whitepaperDownloads = [
-    {
-        name: 'John Smith',
-        email: 'john.smith@techcorp.com',
-        downloadDate: new Date(Date.now() - 86400000).toISOString() // Yesterday
-    },
-    {
-        name: 'Sarah Johnson',
-        email: 'sarah.j@innovate.io',
-        downloadDate: new Date(Date.now() - 172800000).toISOString() // 2 days ago
-    },
-    {
-        name: '',
-        email: 'mike.chen@startup.com',
-        downloadDate: new Date(Date.now() - 259200000).toISOString() // 3 days ago
+// Load whitepaper downloads from localStorage
+function getWhitepaperDownloads() {
+    const stored = localStorage.getItem('eco2_whitepaper_leads');
+    if (stored) {
+        return JSON.parse(stored);
     }
-];
+    
+    // Sample data if no stored data exists
+    return [
+        {
+            name: 'John Smith',
+            email: 'john.smith@techcorp.com',
+            downloadDate: new Date(Date.now() - 86400000).toISOString() // Yesterday
+        },
+        {
+            name: 'Sarah Johnson',
+            email: 'sarah.j@innovate.io',
+            downloadDate: new Date(Date.now() - 172800000).toISOString() // 2 days ago
+        },
+        {
+            name: '',
+            email: 'mike.chen@startup.com',
+            downloadDate: new Date(Date.now() - 259200000).toISOString() // 3 days ago
+        }
+    ];
+}
 
 // DOM Elements
 const loginModal = document.getElementById('loginModal');
@@ -163,6 +171,8 @@ function loadLeads() {
     const tbody = document.getElementById('leadsTableBody');
     tbody.innerHTML = '';
     
+    const whitepaperDownloads = getWhitepaperDownloads();
+    
     if (whitepaperDownloads.length === 0) {
         tbody.innerHTML = '<tr><td colspan="3" class="px-6 py-4 text-center text-gray-500">No downloads yet</td></tr>';
         return;
@@ -278,11 +288,18 @@ function formatDate(dateString) {
 
 // Function to add whitepaper download (called from main website)
 function addWhitepaperDownload(name, email) {
-    whitepaperDownloads.unshift({
+    // Get current leads from localStorage
+    const leads = getWhitepaperDownloads();
+    
+    // Add new lead
+    leads.unshift({
         name: name,
         email: email,
         downloadDate: new Date().toISOString()
     });
+    
+    // Save back to localStorage
+    localStorage.setItem('eco2_whitepaper_leads', JSON.stringify(leads));
     
     // If admin dashboard is open, refresh the leads table
     if (!dashboard.classList.contains('hidden')) {

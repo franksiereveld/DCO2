@@ -710,10 +710,10 @@ function App() {
                 })
                 localStorage.setItem('eco2_whitepaper_leads', JSON.stringify(leads))
                 
-                // Download the file
+                // Download the PDF file
                 const link = document.createElement('a')
-                link.href = '/whitepaper.md'
-                link.download = 'Nature_Neutral_Whitepaper.md'
+                link.href = '/whitepaper.pdf'
+                link.download = 'Nature_Neutral_Data_Centers_The_1000_1_Philosophy_Transforming_Sustainable_AI_Infrastructure.pdf'
                 link.click()
                 
                 alert('Thank you! The whitepaper has been downloaded. We will also send it to your email shortly.')
