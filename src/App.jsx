@@ -34,6 +34,8 @@ import {
 
 function App() {
   const [isVisible, setIsVisible] = useState({})
+  const [showWhitepaperModal, setShowWhitepaperModal] = useState(false)
+  const [whitepaperForm, setWhitepaperForm] = useState({ name: '', email: '' })
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -217,13 +219,11 @@ function App() {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-white/60 text-white hover:bg-white/20 bg-white/10 backdrop-blur-sm border-2" asChild>
-                <a href="/whitepaper.pdf" target="_blank">
-                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-                  </svg>
-                  Read Whitepaper
-                </a>
+              <Button size="lg" variant="outline" className="border-white/60 text-white hover:bg-white/20 bg-white/10 backdrop-blur-sm border-2" onClick={() => setShowWhitepaperModal(true)}>
+                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                </svg>
+                Read Whitepaper
               </Button>
             </div>
           </motion.div>
@@ -668,6 +668,104 @@ function App() {
           </div>
         </div>
       </footer>
+      {/* Whitepaper Modal */}
+      {showWhitepaperModal && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="bg-white rounded-lg shadow-xl max-w-md w-full p-6">
+            <div className="flex justify-between items-center mb-4">
+              <h3 className="text-xl font-semibold text-gray-900">Download Nature Neutral Whitepaper</h3>
+              <button 
+                onClick={() => setShowWhitepaperModal(false)}
+                className="text-gray-400 hover:text-gray-600"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            
+            <p className="text-gray-600 mb-6">
+              Get instant access to our comprehensive whitepaper on the 1000:1 Nature Neutral philosophy transforming sustainable AI infrastructure.
+            </p>
+            
+            <form onSubmit={async (e) => {
+              e.preventDefault()
+              if (!whitepaperForm.email) {
+                alert('Email address is required')
+                return
+              }
+              
+              try {
+                // Store lead in database (placeholder for now)
+                console.log('Storing lead:', whitepaperForm)
+                
+                // Send whitepaper via email (placeholder for now)
+                console.log('Sending whitepaper to:', whitepaperForm.email)
+                
+                // For now, just download the file directly
+                const link = document.createElement('a')
+                link.href = '/whitepaper.md'
+                link.download = 'Nature_Neutral_Whitepaper.md'
+                link.click()
+                
+                alert('Thank you! The whitepaper has been downloaded. We will also send it to your email shortly.')
+                setShowWhitepaperModal(false)
+                setWhitepaperForm({ name: '', email: '' })
+              } catch (error) {
+                alert('There was an error processing your request. Please try again.')
+              }
+            }}>
+              <div className="space-y-4">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                    Name (Optional)
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    value={whitepaperForm.name}
+                    onChange={(e) => setWhitepaperForm(prev => ({ ...prev, name: e.target.value }))}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    placeholder="Your name"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                    Email Address *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    required
+                    value={whitepaperForm.email}
+                    onChange={(e) => setWhitepaperForm(prev => ({ ...prev, email: e.target.value }))}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
+                    placeholder="your.email@company.com"
+                  />
+                </div>
+              </div>
+              
+              <div className="flex gap-3 mt-6">
+                <Button 
+                  type="button" 
+                  variant="outline" 
+                  onClick={() => setShowWhitepaperModal(false)}
+                  className="flex-1"
+                >
+                  Cancel
+                </Button>
+                <Button 
+                  type="submit" 
+                  className="flex-1 gradient-primary text-white"
+                >
+                  Download Whitepaper
+                </Button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
