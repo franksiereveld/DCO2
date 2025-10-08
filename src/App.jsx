@@ -696,13 +696,21 @@ function App() {
               }
               
               try {
-                // Store lead in database (placeholder for now)
-                console.log('Storing lead:', whitepaperForm)
+                // Store lead in admin dashboard
+                if (window.addWhitepaperDownload) {
+                  window.addWhitepaperDownload(whitepaperForm.name, whitepaperForm.email)
+                }
                 
-                // Send whitepaper via email (placeholder for now)
-                console.log('Sending whitepaper to:', whitepaperForm.email)
+                // Store in localStorage as backup
+                const leads = JSON.parse(localStorage.getItem('eco2_whitepaper_leads') || '[]')
+                leads.unshift({
+                  name: whitepaperForm.name,
+                  email: whitepaperForm.email,
+                  downloadDate: new Date().toISOString()
+                })
+                localStorage.setItem('eco2_whitepaper_leads', JSON.stringify(leads))
                 
-                // For now, just download the file directly
+                // Download the file
                 const link = document.createElement('a')
                 link.href = '/whitepaper.md'
                 link.download = 'Nature_Neutral_Whitepaper.md'
