@@ -58,13 +58,13 @@ jobs:
         echo "Contents of dist/assets:"
         ls -la dist/assets/ || echo "No assets directory"
         
-    - name: Verify build contains ECO2.ai branding
+    - name: Verify build contains NatureNeutral.AI branding
       run: |
-        echo "Checking for ECO2.ai in built files..."
-        if grep -r "ECO2.ai" dist/; then
-          echo "✅ ECO2.ai branding found in build"
+        echo "Checking for NatureNeutral.AI in built files..."
+        if grep -r "NatureNeutral.AI" dist/; then
+          echo "✅ NatureNeutral.AI branding found in build"
         else
-          echo "❌ ECO2.ai branding NOT found in build"
+          echo "❌ NatureNeutral.AI branding NOT found in build"
           exit 1
         fi
         
