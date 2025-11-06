@@ -163,7 +163,7 @@ function App() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-3">
               <img src={eco2Logo} alt="ECO2.ai Logo" className="w-8 h-8" />
-              <span className="font-display text-xl text-gray-900">DCO2.com &#47; ECO2.ai</span>
+              <span className="font-display text-xl text-gray-900">NatureNeutral.AI</span>
             </div>
             
             <div className="hidden md:flex items-center space-x-8">
@@ -383,7 +383,7 @@ function App() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl lg:text-5xl font-display text-white mb-6">
-              Why Choose DCO2
+              Why Choose Nature Neutral Data Centers
             </h2>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               We're not just another cloud provider. We're your AI transformation partner 
@@ -632,7 +632,7 @@ function App() {
               <div className="w-8 h-8 gradient-primary rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">DC</span>
               </div>
-              <span className="font-display text-xl">DCO2.com / ECO2.ai</span>
+              <span className="font-display text-xl">NatureNeutral.AI</span>
             </div>
             
             <div>
@@ -658,7 +658,7 @@ function App() {
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row items-center justify-between">
               <p className="text-gray-400 text-center md:text-left">
-                © 2025 DCO2.com / ECO2.ai. All rights reserved.
+                © 2025 NatureNeutral.AI. All rights reserved.
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
