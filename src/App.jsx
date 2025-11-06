@@ -174,7 +174,7 @@ function App() {
             </div>
 
             <Button className="gradient-primary text-white hover:opacity-90 transition-opacity" asChild>
-              <a href="mailto:ir@eco2.ai?subject=Get Started Inquiry">
+              <a href="mailto:ir@natureneutral.ai?subject=Get Started Inquiry">
                 Get Started
                 <ArrowRight className="w-4 h-4 ml-2" />
               </a>
@@ -214,7 +214,7 @@ function App() {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="gradient-primary text-white hover:opacity-90 transition-opacity" asChild>
-                <a href="mailto:ir@eco2.ai?subject=AI Transformation Inquiry">
+                <a href="mailto:ir@natureneutral.ai?subject=AI Transformation Inquiry">
                   Start Your AI Transformation
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </a>
@@ -591,7 +591,7 @@ function App() {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100" asChild>
-                  <a href="mailto:ir@eco2.ai?subject=Schedule Consultation">
+                  <a href="mailto:ir@natureneutral.ai?subject=Schedule Consultation">
                     Schedule Consultation
                   </a>
                 </Button>
@@ -639,8 +639,8 @@ function App() {
               <h4 className="font-heading text-white mb-4">Contact</h4>
               <div className="space-y-2 text-gray-400">
                 <p>Investor Relations:</p>
-                <a href="mailto:ir@eco2.ai" className="text-blue-400 hover:text-blue-300 transition-colors">
-                  ir@eco2.ai
+                <a href="mailto:ir@natureneutral.ai" className="text-blue-400 hover:text-blue-300 transition-colors">
+                  ir@natureneutral.ai
                 </a>
               </div>
             </div>
