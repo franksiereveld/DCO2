@@ -6,7 +6,7 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Production builds
-dist/
+# dist/  # Temporarily uncommenting to deploy via git
 build/
 
 # Environment variables
